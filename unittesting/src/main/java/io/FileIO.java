@@ -27,12 +27,12 @@ public class FileIO {
 	 * @exception IllegalArgumentException when the given file is empty
 	 * @exception NumberFormatException for checking invalid entries
 	 * @exception IOException when an IO interruption occurs (not required to be tested)
-	 */ 
+	 */
 	public int[] readFile(String filepath) {
 		File file = new File(filepath);
-		if (!file.exists()) 
+		if (!file.exists())
 			throw new IllegalArgumentException("Input file does not exist");
-		
+
 		List<Integer> numbersList = new ArrayList<>();
 		BufferedReader reader;
 		try {
@@ -49,11 +49,11 @@ public class FileIO {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		if (numbersList.size() == 0) 
+
+		if (numbersList.size() == 0)
 			throw new IllegalArgumentException("Given file is empty");
-		
-		// Convert a List to an array using 
+
+		// Convert a List to an array using
 		return numbersList.stream().mapToInt(i -> i).toArray();
 	}
 
