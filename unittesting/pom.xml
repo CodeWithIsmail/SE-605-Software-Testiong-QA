@@ -14,6 +14,14 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.pitest</groupId>
+            <artifactId>pitest-parent</artifactId>
+            <version>1.1.10</version>
+            <type>pom</type>
+        </dependency>
+
     </dependencies>
 
 	<!-- Info of module -->
@@ -30,6 +38,37 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.15.3</version>
+                <configuration>
+
+                    <targetClasses>
+                        <param>math.*</param>
+                        <param>io.*</param>
+                    </targetClasses>
+                    <targetTests>
+                        <param>math.*Test</param>
+                        <param>io.*Test</param>
+                    </targetTests>
+<!--                    <targetClasses>-->
+<!--                        <param>math.*</param>-->
+<!--                    </targetClasses>-->
+<!--                    <targetTests>-->
+<!--                        <param>math.test</param>-->
+<!--                    </targetTests>-->
+
+<!--                    <targetClasses>-->
+<!--                        <param>io.*</param>-->
+<!--                    </targetClasses>-->
+<!--                    <targetTests>-->
+<!--                        <param>io.test</param>-->
+<!--                    </targetTests>-->
+                </configuration>
+            </plugin>
+
 
             <plugin>
                 <groupId>org.jacoco</groupId>

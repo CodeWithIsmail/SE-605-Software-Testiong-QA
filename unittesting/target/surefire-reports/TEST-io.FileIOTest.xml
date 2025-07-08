@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="io.FileIOTest" time="0.017" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="io.FileIOTest" time="0.012" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="maven.multiModuleProjectDirectory" value="/home/ismail360/Desktop/SE-605-Software-Testiong-QA/unittesting"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/ismail360/Desktop/academic/SE-605-Software-Testiong-QA/unittesting"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -14,7 +14,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/home/ismail360/Desktop/SE-605-Software-Testiong-QA/unittesting"/>
+    <property name="user.dir" value="/home/ismail360/Desktop/academic/SE-605-Software-Testiong-QA/unittesting"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="17.0.15+6-Ubuntu-0ubuntu124.04"/>
     <property name="os.arch" value="amd64"/>
@@ -41,7 +41,7 @@
     <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.home" value="/usr/lib/jvm/java-17-openjdk-amd64"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -59,11 +59,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="io.FileIOTest" name="invalidFileTest" time="0.007"/>
-  <testcase classname="io.FileIOTest" name="ioExceptionCatchBlockTest" time="0.004"/>
+  <testcase classname="io.FileIOTest" name="invalidFileTest" time="0.006"/>
+  <testcase classname="io.FileIOTest" name="ioExceptionCatchBlockTest" time="0.003"/>
   <testcase classname="io.FileIOTest" name="ioExceptionTest" time="0"/>
-  <testcase classname="io.FileIOTest" name="intFileTest" time="0.006"/>
-  <testcase classname="io.FileIOTest" name="fileWithMixedEntriesTest" time="0"/>
-  <testcase classname="io.FileIOTest" name="emptyFileTest" time="0"/>
+  <testcase classname="io.FileIOTest" name="intFileTest" time="0.001"/>
+  <testcase classname="io.FileIOTest" name="fileWithMixedEntriesTest" time="0.001"/>
+  <testcase classname="io.FileIOTest" name="emptyFileTest" time="0.001"/>
   <testcase classname="io.FileIOTest" name="nonExistentFileTest" time="0"/>
 </testsuite>
