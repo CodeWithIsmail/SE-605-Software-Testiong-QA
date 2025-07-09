@@ -76,4 +76,27 @@ public class ArithmeticUnitTest {
 //    public void multiplyBothZero() {
 //        arithmeticOperations.multiply(0, 0);
 //    }
+
+    @Test
+    public void multiplyWithFirstZero() {
+        assertEquals(0, arithmeticOperations.multiply(0, 10));
+    }
+
+    @Test
+    public void multiplyWithSecondZero() {
+        assertEquals(0, arithmeticOperations.multiply(10, 0));
+    }
+
+    @Test
+    public void multiplyWithBothZero() {
+        assertEquals(0, arithmeticOperations.multiply(0, 0));
+    }
+
+    @Test
+    public void multiplyExactMaxBoundary() {
+        int x = Integer.MAX_VALUE / 2;
+        int y = 2;
+        assertEquals(x * y, arithmeticOperations.multiply(x, y));
+    }
+
 }

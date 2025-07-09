@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="math.ArithmeticUnitTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="17" failures="0" name="math.ArithmeticUnitTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,14 +59,18 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="math.ArithmeticUnitTest" name="largeNumber" time="0.001"/>
+  <testcase classname="math.ArithmeticUnitTest" name="largeNumber" time="0"/>
+  <testcase classname="math.ArithmeticUnitTest" name="multiplyWithSecondZero" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="multiplyBothNegative" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="multiplySecNegative" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="testMUltiplyWithBothNegative" time="0"/>
+  <testcase classname="math.ArithmeticUnitTest" name="multiplyWithFirstZero" time="0.001"/>
   <testcase classname="math.ArithmeticUnitTest" name="multiplyOverflow" time="0"/>
+  <testcase classname="math.ArithmeticUnitTest" name="multiplyWithBothZero" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="testDivideWithZero" time="0"/>
+  <testcase classname="math.ArithmeticUnitTest" name="multiplyExactMaxBoundary" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="testDivide" time="0"/>
-  <testcase classname="math.ArithmeticUnitTest" name="testMultiply" time="0"/>
+  <testcase classname="math.ArithmeticUnitTest" name="testMultiply" time="0.001"/>
   <testcase classname="math.ArithmeticUnitTest" name="testDivideBothNegative" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="multiplyFirstNegative" time="0"/>
   <testcase classname="math.ArithmeticUnitTest" name="testDivideZero" time="0"/>

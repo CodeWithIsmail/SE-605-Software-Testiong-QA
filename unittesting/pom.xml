@@ -53,6 +53,7 @@
                         <param>math.*Test</param>
                         <param>io.*Test</param>
                     </targetTests>
+
 <!--                    <targetClasses>-->
 <!--                        <param>math.*</param>-->
 <!--                    </targetClasses>-->
@@ -66,6 +67,10 @@
 <!--                    <targetTests>-->
 <!--                        <param>io.test</param>-->
 <!--                    </targetTests>-->
+
+                    <excludedMethods>
+                        <param>printStackTrace</param>
+                    </excludedMethods>
                 </configuration>
             </plugin>
 

@@ -74,4 +74,27 @@ public class FileIOTest {
             assert e.getCause() instanceof IOException;
         }
     }
+
+    @Test
+    public void ioExceptionPrintStackTraceTest() {
+        FileIO fileIO = new FileIO();
+
+        // Save original System.err
+        java.io.PrintStream originalErr = System.err;
+        java.io.ByteArrayOutputStream errContent = new java.io.ByteArrayOutputStream();
+        System.setErr(new java.io.PrintStream(errContent));
+
+        try {
+            fileIO.readFile("src/test/resources"); // Directory triggers FileNotFoundException
+        } catch (IllegalArgumentException e) {
+            // Expected due to numbersList being empty
+        } finally {
+            // Restore System.err
+            System.setErr(originalErr);
+        }
+
+        // Assert the stack trace includes FileNotFoundException
+        assert errContent.toString().contains("java.io.FileNotFoundException");
+    }
+
 }

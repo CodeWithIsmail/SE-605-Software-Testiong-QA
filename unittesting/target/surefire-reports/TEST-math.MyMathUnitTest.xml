@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="math.MyMathUnitTest" time="0" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="math.MyMathUnitTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -61,6 +61,7 @@
   </properties>
   <testcase classname="math.MyMathUnitTest" name="primeTest" time="0"/>
   <testcase classname="math.MyMathUnitTest" name="nonPrimeTest" time="0"/>
+  <testcase classname="math.MyMathUnitTest" name="primeEdgeCaseTest" time="0"/>
   <testcase classname="math.MyMathUnitTest" name="factorialHighInput" time="0"/>
   <testcase classname="math.MyMathUnitTest" name="checkLowInput" time="0"/>
   <testcase classname="math.MyMathUnitTest" name="factorialZero" time="0"/>

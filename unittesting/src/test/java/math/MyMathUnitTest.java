@@ -11,6 +11,11 @@ public class MyMathUnitTest {
     public void factorialLowInput() {
         myMath.factorial(-1);
     }
+    @Test
+    public void primeEdgeCaseTest() {
+        // 4 is divisible by 2, and 2 is n / 2 — so this catches the <= boundary
+        assertEquals(false, myMath.isPrime(4));
+    }
 
     @Test
     public void factorialCheck() {
